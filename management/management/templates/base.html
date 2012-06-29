@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <title>CMS</title>
+    {% load static %}
+    {% get_static_prefix as STATIC_PREFIX %}
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_PREFIX }}css/style.css" />
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_PREFIX }}js/toggle.js"></script>
+</head>
+
+<body>
+
+    {% block content %} {% endblock %}
+
+</body>
+
+</html>
+

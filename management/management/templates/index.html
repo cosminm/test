@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <ul class='all_users'>
+        {% for value in lista %}
+            {{value|unordered_list}}
+        {% endfor %}
+    </ul>
+{% endblock %}
+
